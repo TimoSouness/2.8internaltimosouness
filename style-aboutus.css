@@ -115,50 +115,16 @@ body {
   background-color: #232323;
 }
 
-.grid, .grid a {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: end;
-  grid-column-gap: 10px;
-  grid-row-gap: 30px;
-  padding: 50px 0px;
-  align-items: center;
-  text-align: center;
+.button {
+  padding: 20px;
 }
 
-a {
-  align-items: center;
-  text-align: center;
+.body {
+  padding: 30px;
 }
 
-.stone1 {
-  background-color: #D4AF37;
-  width: 90%;
-  height: 100%;
-}
-
-.store-title {
-  font-size: 19px;
-}
-
-.store-price {
-  font-size: 15px;
-}
-
-.store-buy a {
-  align-items: center;
-  text-align: center;
-}
-
-.store-buy {
-  align-items: center;
-  text-align: center;
-}
-
-.grid img {
-  height: 50%;
-  width: 70%;
-  padding: 20px 0px;
+.content p {
+  padding: 20px;
 }
 
 .footer-div {
@@ -190,4 +156,48 @@ footer {
 .footer-text2 {
   text-align: right;
   color: white;
+}
+
+
+
+.header {
+  font-size: 19px;
+  text-align: center;
+  padding: 5px 0px 20px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #232323;
 }
