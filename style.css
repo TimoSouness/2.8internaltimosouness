@@ -16,6 +16,7 @@ Grey: #232323
   text-decoration: none;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
+  position: relative;
 }
 
 p a {
@@ -99,11 +100,6 @@ p a:hover {
   color: white;
 }
 
-.navbar a:hover {
-  border-style: none solid none solid;
-  padding: 0px 5px;
-}
-
 .stones-sophistication {
   font-size: 30px;
 }
@@ -174,10 +170,23 @@ footer {
   color: white;
 }
 
-
+.footer-text2 p {
+  padding: 3vh 0px;
+}
 
 /* Modal 1 (cookies) */
 
+button {
+  background-color: #232323;
+  border: none;
+  color: white;
+  padding: 2vh 5vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 .modal {
   position: fixed; /* Stay in place */
@@ -213,10 +222,10 @@ footer {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  z-index: 10;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #D4AF37;
   text-decoration: none;
   cursor: pointer;

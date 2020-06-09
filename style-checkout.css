@@ -17,6 +17,7 @@ Grey: #232323
   list-style-type: none;
   font-family: 'Lato', sans-serif;
   position: relative;
+  box-sizing: border-box;
 }
 
 p a {
@@ -31,7 +32,7 @@ p a:hover {
 }
 
 .nav-div-top {
-  height: 150px;
+  height: 180px;
   display: grid;
   grid-template-columns: 20% 60% 20%;
   padding: 15px;
@@ -66,7 +67,7 @@ p a:hover {
   grid-template-columns: 20% 60% 20%;
   align-items: center;
   font-size: 20px;
-  height: 55px;
+  height: 85px;
   background-color: #D4AF37;
   padding: 15px;
   text-align: center;
@@ -111,17 +112,46 @@ body {
   background-color: #232323;
 }
 
-.button {
-  padding: 20px;
+
+.body-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  text-align: center;
 }
 
-.body {
-  padding: 30px;
+.body-left {
+  background-color: #232323;
+  align-items: center;
+  margin: 50px;
 }
 
-.content p {
-  padding: 20px;
+.body-left img {
+  height: 100%;
+  width: 100%;
+  align-items: center;
 }
+
+.preheader {
+  font-size: 20px;
+  padding: 2vh;
+  font-style: italic;
+}
+
+#checkout-header {
+  font-size: 50px;
+  color: #D4AF37;
+  padding: 20px 0px 30px;
+}
+
+#checkout-desc {
+  padding: 50px 0px;
+  background-color: #232323;
+}
+
+.body-right {
+  background-color: black;
+}
+
 
 .footer-div {
     background-color: #D4AF37;
@@ -156,44 +186,81 @@ footer {
 
 
 
-.header {
-  font-size: 19px;
-  text-align: center;
-  padding: 5px 0px 20px;
-}
-
-.collapsible {
-  background-color: #777;
+button {
+  background-color: grey;
   color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
+button:hover {
+  opacity:1;
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
 }
 
-.active:after {
-  content: "\2212";
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: white;
+  color: black;
 }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #D4AF37;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
   background-color: #232323;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
 }
