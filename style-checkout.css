@@ -144,12 +144,14 @@ body {
 }
 
 #checkout-desc {
-  padding: 50px 0px;
+  top: 100px;
+  padding: 50px 0px 50px;
   background-color: #232323;
 }
 
 .body-right {
   background-color: black;
+  position: relative;
 }
 
 
@@ -187,18 +189,22 @@ footer {
 
 
 button {
-  background-color: grey;
-  color: white;
-  padding: 14px 20px;
+  background-color: #232323;
+  color: #D4AF37;
+  padding: 29px 20px;
   margin: 8px 0;
+  font-size: 25px;
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  position: absolute;
+  bottom: 60px;
+  right: 0vw;
 }
 
 button:hover {
-  opacity:1;
+  background-color: #D4AF37;
+  color: black;
 }
 
 /* Float cancel and delete buttons and add an equal width */

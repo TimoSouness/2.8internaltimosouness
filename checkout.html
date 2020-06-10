@@ -55,11 +55,12 @@
       <div class="preheader"><h3>Thank you for purchasing:</h3></div>
       <div id="checkout-header" class="header"><h1></h1></div>
       <div id="checkout-desc" class="desc"><p></p></div>
+      <button onclick="document.getElementById('id01').style.display='block'">Confirm Purchase</button>
           <div id="id01" class="modal">
             <form class="modal-content" action="/action_page.php">
               <div class="container">
                 <h1>Purchase?</h1>
-                <p>Are you sure you would like to purchase?</p>
+                <p>Your credit card will be automatically charged</p>
 
                 <div class="clearfix">
                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
@@ -94,7 +95,6 @@
       </div>
     </div>
   </footer>
-  <button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
 
   <script>
   // Get the modal
