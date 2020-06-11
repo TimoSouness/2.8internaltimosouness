@@ -62,7 +62,8 @@ p a:hover {
 }
 
 .navbar {
-  display: grid;
+  display: flex;
+  justify-content: space-around;
   grid-template-columns: 20% 60% 20%;
   align-items: center;
   font-size: 20px;
@@ -70,12 +71,6 @@ p a:hover {
   background-color: #D4AF37;
   padding: 15px;
   text-align: center;
-}
-
-.nav-div-bottom {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 .navbar a::before {
@@ -132,7 +127,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  place-items: end;
+  place-items: center;
   grid-column-gap: 10px;
   grid-row-gap: 50px;
   padding: 50px 0px;
@@ -214,4 +209,44 @@ footer {
 .footer-text2 {
   text-align: right;
   color: white;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .nav-div-top {
+    grid-template-columns: 40% 20% 40%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    height: 200%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stone-sophistication {
+    background-color: #232323;
+  }
+
+  footer {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-div-top {
+    grid-template-columns: 47.5% 5% 47.5%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    height: 230px;
+  }
 }
