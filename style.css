@@ -19,6 +19,8 @@ Grey: #232323
   position: relative;
 }
 
+/* CSS for the nav section */
+
 p a {
   color: white;
   text-decoration: underline;
@@ -99,6 +101,10 @@ p a:hover {
   font-size: 30px;
 }
 
+
+
+/* CSS for the body section */
+
 body {
   margin: 0;
   font-size: 25px;
@@ -133,6 +139,10 @@ body {
   color: #D4AF37;
   font-size: 60px;
 }
+
+
+
+/* CSS for the footer section (the .footer-div is short for footer-divider) */
 
 .footer-div {
     background-color: #D4AF37;
@@ -169,109 +179,114 @@ footer {
   padding: 3vh 0px;
 }
 
-/* Modal 1 (cookies) */
 
-button {
-  background-color: #232323;
-  border: none;
-  color: white;
-  padding: 2vh 5vw;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
 
-.modal {
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.8s;
-  animation-name: fadeIn;
-  animation-duration: 0.8s
-}
+/* CSS for the cookie pop-up modal */
 
-/* Modal Content */
-.modal-content {
-  position: fixed;
-  bottom: 0;
-  background-color: black; /* #black makes background transperent, remove # to make solid black */
-  width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.8s;
-  animation-name: slideIn;
-  animation-duration: 0.8s
-}
+  button {
+    background-color: #232323;
+    border: none;
+    color: white;
+    padding: 2vh 5vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  z-index: 10;
-}
+  .modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.8s;
+    animation-name: fadeIn;
+    animation-duration: 0.8s
+  }
 
-.close:hover, .close:focus {
-  color: #D4AF37;
-  text-decoration: none;
-  cursor: pointer;
-}
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: black; /* #black makes background transperent, remove # to make solid black */
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.8s;
+    animation-name: slideIn;
+    animation-duration: 0.8s
+  }
 
-.modal-header {
-  padding: 18px 16px;
-  background-color: #232323;
-  color: white;
-  font-size: 18px;
-}
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 10;
+  }
 
-.modal-body {
-  padding: 18px 16px;
-  font-size: 12px;
-}
+  .close:hover, .close:focus {
+    color: #D4AF37;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-.modal-footer {
-  padding: 6px 18px;
-  background-color: #D4AF37;
-  color: white;
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 13px;
-}
+  .modal-header {
+    padding: 18px 16px;
+    background-color: #232323;
+    color: white;
+    font-size: 18px;
+  }
 
-.modal-footer a {
-  text-decoration: underline;
-}
+  .modal-body {
+    padding: 18px 16px;
+    font-size: 12px;
+  }
 
-/* Add Animation */
-@-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
+  .modal-footer {
+    padding: 6px 18px;
+    background-color: #D4AF37;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 13px;
+  }
 
-@keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
-}
+  .modal-footer a {
+    text-decoration: underline;
+  }
 
-@-webkit-keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
+  /* Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
 
-@keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
-}
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
 
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+
+
+/* Media queries for the landing page. Quite standard */
 
 @media only screen and (max-width: 1100px) {
   .nav-div-top {

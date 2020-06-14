@@ -19,6 +19,8 @@ Grey: #232323
   position: relative;
 }
 
+/* CSS for the nav section */
+
 p a {
   color: white;
   text-decoration: underline;
@@ -104,6 +106,16 @@ p a:hover {
   font-size: 30px;
 }
 
+
+
+/* CSS for the body section */
+
+.header {
+  font-size: 19px;
+  text-align: center;
+  padding: 5px 0px 20px;
+}
+
 body {
   margin: 0;
   font-size: 25px;
@@ -123,6 +135,9 @@ body {
 .content p {
   padding: 20px;
 }
+
+
+/* CSS for the footer section (the .footer-div is short for footer-divider) */
 
 .footer-div {
     background-color: #D4AF37;
@@ -157,11 +172,7 @@ footer {
 
 
 
-.header {
-  font-size: 19px;
-  text-align: center;
-  padding: 5px 0px 20px;
-}
+/* CSS for the collapsible boxes */
 
 .collapsible {
   background-color: #777;
@@ -201,6 +212,7 @@ footer {
 
 
 
+/* Media queries for the about us page. Identical to landing page queries.*/
 
 @media only screen and (max-width: 1100px) {
   .nav-div-top {

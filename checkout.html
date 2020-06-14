@@ -46,11 +46,14 @@
     </div>
   </nav>
 
+  <!-- HTML for the body -->
   <div class="body-grid">
+    <!-- HTML for the (at > 1000px) left side of the body featuring the image of the chosen product-->
     <div class="body-left">
       <img id="checkout-image" src="" alt="Your next purchase">
     </div>
 
+    <!-- HTML for the (at > 1000px) right side of the body featuring the header, description and purchase confirmation button -->
     <div class="body-right">
       <div class="preheader"><h3>Thank you for purchasing:</h3></div>
       <div id="checkout-header" class="header"><h1></h1></div>
@@ -60,7 +63,7 @@
   </div>
 
 
-
+  <!-- HTML for the content of the purchase confirmation modal -->
   <div id="id01" class="modal">
     <form class="modal-content" action="/action_page.php">
       <div class="container">
@@ -84,7 +87,7 @@
       </div>
 
       <div class="footer-blank">
-
+        <!-- this div exists just for there to be that empty space between the left and right sections of the footer -->
       </div>
 
       <div class="footer-text2">
@@ -93,6 +96,8 @@
     </div>
   </footer>
 
+
+  <!-- Javascript for the purchase confirmation modal -->
   <script>
   // Get the modal
   var modal = document.getElementById('id01');
@@ -107,7 +112,7 @@
 
 
 
-  <!-- The Modal -->
+  <!-- Javascript for the image modal -->
   <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
@@ -137,6 +142,8 @@
   }
   </script>
 
+
+  <!-- below the code allowing music to play on the site - for this page it's famous Baroque classic Passepied by Bach, to exert an opulance of wealth-->
   <audio autoplay loop>
     <source src="sitemedia/bach-passepied.mp3" type="audio/mpeg">
   </audio>

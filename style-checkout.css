@@ -20,6 +20,8 @@ Grey: #232323
   box-sizing: border-box;
 }
 
+/* CSS for the nav section */
+
 p a {
   color: white;
   text-decoration: underline;
@@ -105,6 +107,10 @@ p a:hover {
   font-size: 30px;
 }
 
+
+
+/* CSS for the body section */
+
 body {
   margin: 0;
   font-size: 25px;
@@ -144,7 +150,7 @@ body {
 }
 
 #checkout-desc {
-  top: 100px;
+  top: 5vh;
   padding: 50px 0px 50px;
   background-color: #232323;
   font-size: 20px;
@@ -155,6 +161,9 @@ body {
   position: relative;
 }
 
+
+
+/* CSS for the footer section (the .footer-div is short for footer-divider) */
 
 .footer-div {
     background-color: #D4AF37;
@@ -189,210 +198,197 @@ footer {
 
 
 
+/* CSS for image and button modals */
 
+  /* Button modal CSS */
+  button {
+    background-color: #232323;
+    color: white;
+    padding: 50px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
 
-/* Button modal CSS */
-button {
-  background-color: #232323;
-  color: white;
-  padding: 50px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  font-size: 20px;
-
-}
-
-#checkout-btn {
-  position: absolute;
-  bottom: 50px;
-  right: 0vw;
-  font-size: 35px;
-  width: 100%;
-}
-
-button:hover {
-  background-color: #D4AF37;
-  color: black;
-
-}
-
-/* Float cancel and delete buttons and add an equal width */
-.cancelbtn, .deletebtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add a color to the cancel button */
-.cancelbtn {
-  background-color: #232323;
-  color: white;
-}
-
-.cancelbtn:hover {
-  background-color: red;
-}
-
-/* Add a color to the delete button */
-.deletebtn {
-  background-color: #232323;
-}
-
-/* Add padding and center-align text to the container */
-.container {
-  padding: 16px;
-  text-align: center;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: black;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #D4AF37;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #D4AF37;
-  margin-bottom: 25px;
-}
-
-/* The Modal Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and delete button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .deletebtn {
-     width: 100%;
   }
-}
 
-
-
-/* Image modal CSS */
-
-#checkout-image {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#checkout-image:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.Imgclose {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #D4AF37;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.Imgclose:hover,
-.Imgclose:focus {
-  color: #D4AF37;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
+  #checkout-btn {
+    position: absolute;
+    bottom: 50px;
+    right: 0vw;
+    font-size: 35px;
     width: 100%;
   }
-}
+
+  button:hover {
+    background-color: #D4AF37;
+    color: black;
+
+  }
+
+  /* Float cancel and delete buttons and add an equal width */
+  .cancelbtn, .deletebtn {
+    float: left;
+    width: 50%;
+  }
+
+  .cancelbtn {
+    background-color: #232323;
+    color: white;
+  }
+
+  .cancelbtn:hover {
+    background-color: red;
+  }
+
+  .deletebtn {
+    background-color: #232323;
+  }
+
+  .container {
+    padding: 16px;
+    text-align: center;
+  }
 
 
+  /* Button Modal Content/Box */
+  .modal-content {
+    background-color: black;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #D4AF37;
+    width: 80%;
+  }
+
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #D4AF37;
+    margin-bottom: 25px;
+  }
+
+  /* The Modal Close Button (only the button modal) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+       width: 100%;
+    }
+  }
+
+
+
+  /* Image modal CSS */
+
+  #checkout-image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #checkout-image:hover {opacity: 0.7;}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+  }
+
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* The Close Button */
+  .Imgclose {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #D4AF37;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .Imgclose:hover,
+  .Imgclose:focus {
+    color: #D4AF37;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+/* Media queries for the checkout page. Has a unqiue breakpoint (1000px). When reached the image gets stacked on top, so the description does not meld with the confirmation button and the image is still viewable. */
 
 @media only screen and (max-width: 1100px) {
   .nav-div-top {
@@ -400,11 +396,7 @@ hr {
   }
 }
 
-@media only screen and (max-width: 900px) {
-  .navbar {
-    flex-direction: column;
-    height: 200%;
-  }
+@media only screen and (max-width: 1000px) {
 
   .body-grid {
     grid-template-columns: 1fr;
@@ -414,14 +406,16 @@ hr {
     height: 650px;
   }
 
-  .stone-sophistication {
-    background-color: #232323;
-  }
-
   footer {
     height: 100px;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    height: 200%;
+  }
 
 @media only screen and (max-width: 600px) {
   .nav-div-top {
