@@ -27,7 +27,6 @@ p a {
 p a:hover {
   color: #D4AF37;
   text-decoration-color: white;
-  font-style: bold;
 }
 
 .nav-div-top {
@@ -118,6 +117,7 @@ body {
 
 .body {
   padding: 30px;
+  text-align: center;
 }
 
 .content p {
@@ -213,11 +213,6 @@ footer {
     flex-direction: column;
     height: 200%;
   }
-
-  .stone-sophistication {
-    background-color: #232323;
-  }
-
   footer {
     height: 100px;
   }
